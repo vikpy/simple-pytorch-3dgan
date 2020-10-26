@@ -93,10 +93,9 @@ def tester(args):
         # print (y_prob.item(), criterion(y_prob, y_real).item())
 
         ### visualization
-        if args.use_visdom == False:
-            SavePloat_Voxels(samples, image_saved_path, 'tester_norm_'+str(i))
-        else:
-            plotVoxelVisdom(samples[0,:], vis, "tester_"+str(i))
+        
+        SavePloat_Voxels(samples, image_saved_path, 'tester_norm_'+str(i))
+
         
 
 
