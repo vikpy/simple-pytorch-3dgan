@@ -84,7 +84,7 @@ def tester(args):
         
         # print (z.size())
         fake = G(z)
-        samples = fake.unsqueeze(dim=0).detach().numpy()
+        samples = fake.unsqueeze(dim=0).detach().cpu().numpy()
         # print (samples.shape)
         # print (fake)
         y_prob = D(fake)
