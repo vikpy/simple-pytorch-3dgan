@@ -26,7 +26,7 @@ bias = False
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 input_directory = '/content/master/simple-pytorch-3dgan-master'
 data_dir = input_directory + '/volumetric_data/'
-model_dir = input_directory +'chair/'    # change it to train on other data models
+model_dir = 'chair/'    # change it to train on other data models
 output_dir = input_directory + '/outputs'
 images_dir = input_directory + '/images'
 
